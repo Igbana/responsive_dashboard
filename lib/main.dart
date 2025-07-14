@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/utils/themes.dart';
 import 'pages/homepage.dart';
 
 void main() {
@@ -10,6 +11,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: HomePage());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Dashboard UI",
+      home: HomePage(),
+      theme: AppThemes.theme,
+    );
   }
 }
