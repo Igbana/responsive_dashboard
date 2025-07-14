@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/widgets/dashboard.dart';
 import 'package:responsive_dashboard/widgets/side_menu.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,8 +11,8 @@ class HomePage extends StatelessWidget {
       body: SafeArea(
         child: Row(
           children: [
-            Expanded(flex: 2, child: SizedBox(child: SideMenu())),
-            Expanded(flex: 7, child: Container(color: Colors.blue)),
+            Expanded(flex: 2, child: SideMenu()),
+            Expanded(flex: 7, child: Dashboard()),
             Expanded(flex: 3, child: Container(color: Colors.green)),
           ],
         ),
