@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/utils/colors.dart';
+import 'package:responsive_dashboard/utils/dimensions.dart';
+import 'package:responsive_dashboard/utils/styles.dart';
 
 import '../models/health_model.dart';
 
@@ -13,11 +14,8 @@ class HealthCard extends StatelessWidget {
       child: AspectRatio(
         aspectRatio: 1,
         child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8),
-            color: AppColors.cardBackgroundColor,
-          ),
-          padding: EdgeInsets.all(12),
+          decoration: AppStyles.cardDecoration,
+          padding: AppDimensions.cardPadding,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,

@@ -6,4 +6,5 @@ class AppThemes {
     scaffoldBackgroundColor: AppColors.backgroundColor,
     brightness: Brightness.dark,
   );
+  
 }

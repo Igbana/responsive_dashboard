@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'line_chart_card.dart';
 import 'activity_details.dart';
+import 'bar_graph_card.dart';
 import 'header.dart';
 
 class Dashboard extends StatelessWidget {
@@ -7,14 +9,17 @@ class Dashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      spacing: 18,
-      children: [
-        const SizedBox(height: 18),
-        const Header(),
-        const ActivityDetailsCard(),
-        
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        spacing: 18,
+        children: [
+          const SizedBox(height: 18),
+          const Header(),
+          const ActivityDetailsCard(),
+          const LineChartCard(),
+          const BarGraphCard(),
+        ],
+      ),
     );
   }
 }
