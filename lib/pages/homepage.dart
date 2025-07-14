@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/widgets/dashboard.dart';
-import 'package:responsive_dashboard/widgets/side_menu.dart';
+import '../widgets/dashboard.dart';
+import '../widgets/side_menu.dart';
+import '../widgets/summary_board.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -13,7 +14,7 @@ class HomePage extends StatelessWidget {
           children: [
             Expanded(flex: 2, child: SideMenu()),
             Expanded(flex: 7, child: Dashboard()),
-            Expanded(flex: 3, child: Container(color: Colors.green)),
+            Expanded(flex: 3, child: SummaryBoard()),
           ],
         ),
       ),

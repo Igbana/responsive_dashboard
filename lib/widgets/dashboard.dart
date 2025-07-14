@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'line_chart_card.dart';
 import 'activity_details.dart';
-import 'bar_graph_card.dart';
+import 'line_chart_card.dart';
+import 'bar_details.dart';
 import 'header.dart';
 
 class Dashboard extends StatelessWidget {
@@ -17,7 +17,7 @@ class Dashboard extends StatelessWidget {
           const Header(),
           const ActivityDetailsCard(),
           const LineChartCard(),
-          const BarGraphCard(),
+          const BarDetails(),
         ],
       ),
     );

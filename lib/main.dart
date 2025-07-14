@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/utils/themes.dart';
+import 'utils/themes.dart';
 import 'pages/homepage.dart';
 
 void main() {
