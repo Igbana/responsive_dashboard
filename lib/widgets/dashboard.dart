@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'activity_details_card.dart';
+import 'activity_details.dart';
 import 'header.dart';
 
 class Dashboard extends StatelessWidget {
@@ -8,11 +8,12 @@ class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      spacing: 18,
       children: [
         const SizedBox(height: 18),
         const Header(),
-        const SizedBox(height: 18),
         const ActivityDetailsCard(),
+        
       ],
     );
   }
